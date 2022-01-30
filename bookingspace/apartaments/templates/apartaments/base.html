@@ -1,0 +1,115 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<title>{{ title }}</title>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css'%}" media="screen" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/superfish.css'%}" media="screen">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/prettyPhoto.css'%}" media="screen"/>
+
+	<!--[if lt IE 9]>
+	<script src="../../../html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="{% static 'js/jquery-1.7.1.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.nivo.slider.js'%}"></script>
+	<script type="text/javascript" src="{% static 'js/hoverIntent.js'%}"></script>
+	<script type="text/javascript" src="{% static 'js/superfish.js'%}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.jcarousel.js'%}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.tweet.js'%}"></script>
+	<script type="text/javascript" src="{% static 'js/jflickrfeed.js'%}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.masonry.min.js'%}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.prettyPhoto.js'%}"></script>
+	<script type="text/javascript" src="{% static 'js/slides.min.jquery.js'%}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.quicksand.js'%}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.contact.js'%}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.preloadify.min.js'%}"></script>
+
+	<script type="text/javascript" src="{% static 'js/custom.js'%}"></script>
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="top">
+		<header id="header">
+
+			<div class="three-fourth column-last">
+				<nav id="navigation">
+					<ul id="mainnav">
+						<li><a class="current" href="{% url 'index' %}">Главная</a></li>
+						<li><a href="team.html">Наша команда</a></li>
+						<li><a href="{% url 'apartaments' %}">Недвижимость</a></li>
+						<li><a href="contact.html">Страница под личный кабинет</a></li>
+					</ul>
+				</nav><!--end navigation-->
+			</div><!--end three-fourth-->
+		</header>
+
+		{% block content %} {% endblock %}
+	</div><!--end top-->
+
+		{% block footer-content %} {% endblock %}
+
+	<div class="centered-wrapper">
+
+		<footer id="footer">
+			<div class="double-separator"></div>
+			<div id="topfooter">
+				<div class="one-fourth">
+					<h3>A Few Words About Us</h3>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				</div><!--end one-fourth-->
+				<div class="one-fourth">
+					<h3>Twitter Updates</h3>
+					<div class="tweet"></div>
+				</div><!--end one-fourth-->
+				<div class="one-fourth">
+					<h3>Flickr Inspiration</h3>
+					<ul id="flickr" class="thumbs"></ul>
+				</div><!--end one-fourth-->
+				<div class="one-fourth column-last">
+					<h3>Get in Touch with Us</h3>
+					<p>Address:
+					1600 Amphitheatre Parkway <br />
+					Mountain View, CA 94043</p>
+					<p>Phone: +321 123 456 7 </p>
+					<p>E-mail: <a href="mailto:">johndoe@ipsum.com</a><br />
+				</div><!--end one-fourth-->
+			</div><!--end topfooter-->
+
+			<div id="bottomfooter">
+				<div class="one-half">
+					<p>Copyright &copy; 2012 - Haze | All Rights Reserved</p>
+				</div><!--end one-half-->
+
+				<div class="one-half column-last">
+					<ul id="social">
+						<li><a class="rss" href="#">RSS Feed</a></li>
+						<li><a class="facebook" href="#">Facebook</a></li>
+						<li><a class="twitter" href="#">Twitter</a></li>
+						<li><a class="flickr" href="#">Flickr</a></li>
+						<li><a class="google" href="#">Google</a></li>
+
+					<!-- You can add social icons for forrst, dribbble, vimeo, linkedin and skype. Take the ones you need from the list and paste them above
+
+						<li><a class="forrst" href="#">Forrst</a></li>
+						<li><a class="dribbble" href="#">Dribbble</a></li>
+						<li><a class="vimeo" href="#">Vimeo</a></li>
+						<li><a class="linkedin" href="#">LinkedIn</a></li>
+						<li><a class="skype" href="#">Skype</a></li>
+					-->
+					</ul>
+				</div><!--end one-half-->
+				<a href="#" class="totop">scroll to top</a>
+			</div><!--end bottomfooter-->
+		</footer><!--end footer-->
+
+	</div><!--end centered-wrapper-->
+</div>
+</body>
+</html>

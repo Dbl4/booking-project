@@ -337,8 +337,8 @@ h2 {
 
 h3 {
 	font-size:18px;
-	line-height:24px;	
-	margin-bottom:20px;	
+	line-height:24px;
+	margin-bottom:5px;
 }
 
 h4 {
@@ -350,7 +350,6 @@ h5 {
 	font-size:12px;
 	line-height:20px;
 }
-
 
 /*--- 4.1. Dropcaps ---*/
 
@@ -514,6 +513,10 @@ ul#mainnav li a:active, ul#mainnav li a:hover , ul#mainnav li a.current{
 
 .services {
 	overflow:hidden;
+}
+
+h1.intro-text {
+	text-align:center;
 }
 
 h2.intro-text {
@@ -1154,7 +1157,7 @@ a.selected {
 
 #portfolio-wrapper .three-columns li {
 	width:300px;
-	height:295px;
+	height:325px;
 }
 
 #portfolio-wrapper .two-columns li {
@@ -1420,7 +1423,6 @@ textarea#mycomment {
 }
 
 span.current {
-    background:#777777;
     color:#efefef;
     display:inline-block;
     margin:4px;

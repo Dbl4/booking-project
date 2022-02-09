@@ -10,3 +10,7 @@ def index(request):
 def apartaments(request):
     context = {'title': 'Недвижимость'}
     return render(request, 'apartaments/apartaments.html', context)
+
+def apartament_description(request):
+    context = {'title': 'Объявления'}
+    return render(request, 'apartaments/apartament-description.html', context)

@@ -31,6 +31,8 @@
 
 	<script type="text/javascript" src="{% static 'js/custom.js'%}"></script>
 
+	{% block css-sona %} {% endblock %}
+
 </head>
 
 <body>
@@ -110,6 +112,10 @@
 		</footer><!--end footer-->
 
 	</div><!--end centered-wrapper-->
+
 </div>
+
+{% block js-sona %} {% endblock %}
+
 </body>
 </html>

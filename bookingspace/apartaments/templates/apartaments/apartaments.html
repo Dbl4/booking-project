@@ -5,6 +5,7 @@
 		<section class="page-title">
 
 				<!--сортировка по категориям квартир-->
+				<!--пока что сортировка идет по джава-скрипту как-то, но это неважно (можно свою сделать через питон) -->
 				<div class="two-half column-last alignright">
 					<ul id="filters">
 						<li>Сортировать:</li>
@@ -26,10 +27,10 @@
 		<section id="portfolio-wrapper">
 			<ul class="portfolio three-columns">
 				<li data-id="id-1" class="cat-2 cat-3">
-					<a href="apartament-description.html">
+					<a href="{% url 'apartament_description' %}">
 						<img src="{% static 'images/portfolio/pic1.jpg'%}" alt="" />
 					</a>
-					<h4>Winter Wonderland</h4>
+					<h3><a href="{% url 'apartament_description' %}">Winter Wonderland<br>10 000 руб.</a></h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
 					<div class="count hidden"></div>
 				</li>
@@ -37,7 +38,7 @@
 					<a href="apartament-description.html">
 						<img src="{% static 'images/portfolio/pic2.jpg'%}" alt="" />
 					</a>
-					<h4>The Beauty of Black & White</h4>
+					<h3><a href="apartament-description.html">The Beauty of Black & White<br>15 000 руб.</a></h3>
 					<p> Nam libero tempore, cum soluta nobis est eligendi optio cumque</p>
 					<div class="count hidden"></div>
 				</li>
@@ -45,7 +46,7 @@
 					<a href="apartament-description.html">
 						<img src="{% static 'images/portfolio/pic3.jpg'%}" alt="" />
 					</a>
-					<h4>High Speed Cars</h4>
+					<h3><a href="apartament-description.html">High Speed Cars<br>17 000 руб.</a></h3>
 					<p> Excepteur sint occaecat cupidatat non proident</p>
 					<div class="count hidden"></div>
 				</li>
@@ -53,7 +54,7 @@
 					<a href="apartament-description.html">
 						<img src="{% static 'images/portfolio/pic4.jpg'%}" alt="" />
 					</a>
-					<h4>Liberty Prison</h4>
+					<h3><a href="apartament-description.html">Liberty Prison<br>13 000 руб.</a></h3>
 					<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
 					<div class="count hidden"></div>
 				</li>
@@ -61,7 +62,7 @@
 					<a href="apartament-description.html">
 						<img src="{% static 'images/portfolio/pic5.jpg'%}" alt="" />
 					</a>
-					<h4>After 5`o Clock</h4>
+					<h3><a href="apartament-description.html">After 5`o Clock<br>15 000 руб.</a></h3>
 					<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
 					<div class="count hidden"></div>
 				</li>
@@ -69,7 +70,7 @@
 					<a href="apartament-description.html">
 						<img src="{% static 'images/portfolio/pic6.jpg'%}" alt="" />
 					</a>
-					<h4>Paris in Las Vegas</h4>
+					<h3><a href="apartament-description.html">Paris in Las Vegas<br>25 000 руб.</a></h3>
 					<p> Excepteur sint occaecat cupidatat non proident</p>
 					<div class="count hidden"></div>
 				</li>
@@ -77,7 +78,7 @@
 					<a href="apartament-description.html">
 						<img src="{% static 'images/portfolio/pic7.jpg'%}" alt="" />
 					</a>
-					<h4>Water and Earth</h4>
+					<h3><a href="apartament-description.html">Water and Earth<br>25 000 руб.</a></h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
 					<div class="count hidden"></div>
 				</li>
@@ -85,7 +86,7 @@
 					<a href="apartament-description.html">
 						<img src="{% static 'images/portfolio/pic8.jpg'%}" alt="" />
 					</a>
-					<h4>The School of Future</h4>
+					<h3><a href="apartament-description.html">The School of Future<br>25 000 руб.</a></h3>
 					<p> Nam libero tempore, cum soluta nobis est eligendi optio cumque</p>
 					<div class="count hidden"></div>
 				</li>
@@ -93,7 +94,7 @@
 					<a href="apartament-description.html">
 						<img src="{% static 'images/portfolio/pic9.jpg'%}" alt="" />
 					</a>
-					<h4>When Time Stood Still</h4>
+					<h3><a href="apartament-description.html">When Time Stood Still<br>25 000 руб.</a></h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
 					<div class="count hidden"></div>
 				</li>
@@ -101,7 +102,7 @@
 					<a href="apartament-description.html">
 						<img src="{% static 'images/portfolio/pic10.jpg'%}" alt="" />
 					</a>
-					<h4>The Perfect Family Dinner</h4>
+					<h3><a href="apartament-description.html">The Perfect Family Dinner<br>25 000 руб.</a></h3>
 					<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
 					<div class="count hidden"></div>
 				</li>
@@ -109,7 +110,7 @@
 					<a href="apartament-description.html">
 						<img src="{% static 'images/portfolio/pic11.jpg'%}" alt="" />
 					</a>
-					<h4>Too Many Years Ago</h4>
+					<h3><a href="apartament-description.html">Too Many Years Ago<br>25 000 руб.</a></h3>
 					<p> Excepteur sint occaecat cupidatat non proident</p>
 					<div class="count hidden"></div>
 				</li>
@@ -117,7 +118,7 @@
 					<a href="apartament-description.html">
 						<img src="{% static 'images/portfolio/pic12.jpg'%}" alt="" />
 					</a>
-					<h4>Bamberg</h4>
+					<h3><a href="apartament-description.html">Bamberg<br>25 000 руб.</a></h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
 					<div class="count hidden"></div>
 				</li>

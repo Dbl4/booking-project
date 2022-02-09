@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from apartaments.views import index, apartaments
+from apartaments.views import index, apartaments, apartament_description
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('apartaments/', apartaments, name='apartaments'),
+    path('apartaments/apartament_description/', apartament_description, name='apartament_description'),
 ]
